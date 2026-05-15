@@ -9,38 +9,9 @@ body {
 
 }
 
-.open-sans-About {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-      padding: 20px;
-      margin: 10px;
-  }
-
-.open-sans-Experience {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+section {
+    margin: 20px 0;
     padding: 20px;
-    margin: 10px;
-}
-
-.open-sans-Connect {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings:
-      "width" 100;
-    text-align: center;
-    padding: 200px;
-    margin: 100px;
 }
 
 h2 {
@@ -191,3 +162,44 @@ h1 {
     font-weight: bold;
     margin-top: 10px;
   }
+
+
+
+
+
+
+  /*
+.open-sans-About {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      padding: 20px;
+      margin: 10px;
+  }
+
+.open-sans-Experience {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    padding: 20px;
+    margin: 10px;
+}
+
+.open-sans-Connect {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "width" 100;
+    text-align: center;
+    padding: 200px;
+    margin: 100px;
+}
+*/
