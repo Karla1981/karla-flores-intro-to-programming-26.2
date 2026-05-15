@@ -1,0 +1,193 @@
+/*
+change the background color of the body
+*/
+body {
+    background-color: #edeae5;/* Platinum Color Background */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: rgb(69, 69, 69);
+
+}
+
+.open-sans-About {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      padding: 20px;
+      margin: 10px;
+  }
+
+.open-sans-Experience {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    padding: 20px;
+    margin: 10px;
+}
+
+.open-sans-Connect {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "width" 100;
+    text-align: center;
+    padding: 200px;
+    margin: 100px;
+}
+
+h2 {
+    font-size: 38px;
+    font-weight: 700px;
+    letter-spacing: 2px;
+    color: #474237;/* Under World Color*/
+}
+
+h1 {
+      /* Typography */
+      font-family: 'Poppins', sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      text-transform: uppercase; /* Makes it ALL CAPS */
+      letter-spacing: 3px;
+
+        /* Color & Style */
+        color: #333;
+        text-shadow: 2px 2px 4px #474237;
+    
+        /* Layout */
+        text-align: center;
+        padding: 20px;
+        margin-top: 10px;
+}
+/*  Transform the "Experience" list items into styled blocks (need more work) */
+.list-experience {
+    /* Remove bullets from listing */
+    list-style: none;
+    /* Remove the default indentation */
+    padding: 0;
+    margin: 20px;
+    max-width: 600px;
+    border-left: 20px;
+    margin-left: 30px;
+}
+
+.list-experience li {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    display: block;/* display the skill list in block - each item takes up one full row */
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+/* Transform the style of the "Connect" links */
+.list-connect {
+    display: flex;
+    justify-content: center; 
+    /* Adds equal spacing between each link */
+    gap: 5px;    
+    /* Aligns links vertically */          
+    align-items: center;     
+    padding: 10px 0;
+    /* Remove bullets from listing */
+    list-style: none;
+    margin: 10px;
+    max-width: 600px;
+    border-left: 200px;
+    margin-left: 30px; 
+}
+#Connect {
+    display:inline-block;
+        
+}
+
+.list-connect a {
+    /* Remove default underlining */
+    text-decoration: none;
+    /* Primary color */
+    color: rgb(69, 69, 69);
+    
+}
+
+.list-connect a:hover {
+    color: #a0d9ef; /* Blue hover effect */
+  }
+
+/* Image put at the top right side of the page */
+.top-right-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100px; /* Adjust size as needed */
+        padding-top: 0;
+        margin: 20px;
+        border-radius:50%;
+        border: 5px solid #474237;  
+}
+
+  /* Style for the nav items about-exp-skills-proj-connect */
+  .nav-links a{
+    /* Takes the underline off from each item*/
+    text-decoration: none;
+    /* Remove bullets from listing */
+    list-style: none;
+    /* Primary color - GitHub's brand dark gray */
+    color: #333; 
+    font-size: 30px;
+
+  }
+/* Style for the nav items about-exp-skills-proj-connect */
+  .list-nav-items {
+     /* Remove bullets from listing */
+     list-style: none;
+  }
+
+  .nav-links ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 40px;
+    display: flex;
+    background-color: #f0f0f0; /* Background color of nav */
+  }
+
+  /* Space out the items */
+  .nav-links li {
+    padding: 15px 20px;
+  }
+  /* Hoover onver navigation links */
+  .nav-links a:hover {
+    /* Blue hover effect */
+    color: #a0d9ef; 
+  }
+  /* Make the nav links bold */
+  .nav-links a {
+    font-weight: bold;
+  }
+
+  /* Job Experience */
+  #Experience {
+    display: flex;
+    flex-direction: column; /* Stacks the header row above the description */
+    margin-bottom: 30px;    /* Adds space between differe */
+  }
+  /* Push job title to the left and date to the right */
+  .list-experience {
+    display: flex;
+    /* Pushes title left, date right */
+    justify-content: space-between; 
+ }
+
+  /* Styles for individual elements */  
+  .list-experience li {
+    margin: 10;
+    font-weight: bold;
+    margin-top: 10px;
+  }
