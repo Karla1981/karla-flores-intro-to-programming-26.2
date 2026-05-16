@@ -159,15 +159,12 @@ h1 {
     flex-direction: column; /* Stacks the header row above the description */
     margin-bottom: 30px;    /* Adds space between differe */
   }
-  /* Push job title to the left and date to the right */
-  .list-experience {
+ 
+  /* Styles for individual elements */  
+  .list-experience li {
     display: flex;
     /* Pushes title left, date right */
     justify-content: space-between; 
- }
-
-  /* Styles for individual elements */  
-  .list-experience li {
     margin: 10px;
     font-weight: bold;
     margin-top: 10px;
