@@ -23,7 +23,7 @@ h2 {
 
 h1 {
       /* Typography */
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-size: 48px;
       font-weight: 700;
       text-transform: uppercase; /* Makes it ALL CAPS */
@@ -84,7 +84,6 @@ h1 {
     list-style: none;
     margin: 10px;
     max-width: 600px;
-    border-left: 200px;
     margin-left: 30px; 
 }
 #Connect {
@@ -169,7 +168,7 @@ h1 {
 
   /* Styles for individual elements */  
   .list-experience li {
-    margin: 10;
+    margin: 10px;
     font-weight: bold;
     margin-top: 10px;
   }
