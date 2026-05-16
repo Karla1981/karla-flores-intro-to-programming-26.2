@@ -38,7 +38,7 @@ h1 {
         padding: 20px;
         margin-top: 10px;
 }
-/*  Transform the "Experience" list items into styled blocks (need more work) */
+/*  Transform the "Experience" list items into styled blocks */
 .list-experience {
     /* Remove bullets from listing */
     list-style: none;
@@ -75,7 +75,7 @@ h1 {
 
 .job-header {
     display: flex;
-    flex-direction: column;/* Ensures that job desc. appears below header row */
+    flex-direction: row;/* Ensures that job desc. appears below header row */
     justify-content: space-between; /* Pushes the date to the far right */
     align-items: baseline; /* Aligns text bottoms perfectly */
     flex-wrap: wrap; /* Allows wrapping on smaller mobile screens */
