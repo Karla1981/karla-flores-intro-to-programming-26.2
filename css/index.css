@@ -80,6 +80,7 @@ h1 {
   }
   .job-header {
     display: flex;
+    flex-direction: column;/* Ensures that job desc. appears below header row */
     justify-content: space-between; /* Pushes the date to the far right */
     align-items: baseline; /* Aligns text bottoms perfectly */
     flex-wrap: wrap; /* Allows wrapping on smaller mobile screens */
@@ -164,10 +165,14 @@ h1 {
      /* Remove bullets from listing */
      list-style: none;
   }
+  .nav-links-sticky {
+    position: sticky;
+    top: 0;
+  }
 
   .nav-links ul {
     list-style-type: none;
-    margin: 10px;
+    margin: 20px;/* margin on the nav bar */
     padding: 40px;
     display: flex;
     background-color: #f0f0f0; /* Background color of nav */
@@ -182,7 +187,4 @@ h1 {
     /* Blue hover effect */
     color: #a0d9ef; 
   }
-  .nav-links-sticky {
-    position: sticky;
-    top: 0;
-  }
+  
