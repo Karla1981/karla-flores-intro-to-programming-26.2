@@ -64,30 +64,34 @@ h1 {
 
 }
 
-/* Job title, dates, and desc */
-.job-title {
-    margin: 0;
-    font-size: 1.25rem;
-  
-}
-  /* Job Experience */
-  #Experience {
+/* Job Experience */
+#Experience {
     display: flex;
     flex-direction: column; /* Stacks the header row above the description */
     margin-bottom: 30px;    /* Adds space between differe */
     gap: 8px; /* Spacing between header and description */
  
-  }
-  .job-header {
+}
+
+.job-header {
     display: flex;
     flex-direction: column;/* Ensures that job desc. appears below header row */
     justify-content: space-between; /* Pushes the date to the far right */
     align-items: baseline; /* Aligns text bottoms perfectly */
     flex-wrap: wrap; /* Allows wrapping on smaller mobile screens */
     gap: 16px; /* Spacing between title and date on wrap */
-  }
+}
+
+/* Job title, dates, and desc */
+.job-title {
+    flex-direction: row;
+    margin: 0;
+    font-size: 1.25rem;
+  
+}
 
 .job-dates {
+    flex-direction: row; 
     font-style: italic;
     color: #474237;
 }
