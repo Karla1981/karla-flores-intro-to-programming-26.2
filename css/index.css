@@ -58,7 +58,8 @@ h1 {
     /* Stacks header and description vertically */
     flex-direction: column; 
     /* Adds space between header and description */
-    gap: 10px;               
+    gap: 10px;
+    display: flex;               
     margin-bottom: 30px;
 
 }
