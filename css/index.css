@@ -51,24 +51,42 @@ h1 {
 
 .list-experience li {
     position: relative;
-    margin-bottom: 30px;
     padding-left: 30px;
     display: block;/* display the skill list in block - each item takes up one full row */
     padding: 10px;
     background-color: #f0f0f0;
+
+    display: flex;
+    /* Stacks header and description vertically */
+    flex-direction: column; 
+    /* Adds space between header and description */
+    gap: 10px;               
+    margin-bottom: 30px;
+
 }
 
 /* Job title, dates, and desc */
 .job-title {
-    align-items: flex-end;
+    margin: 0;
+    font-weight: bold;
+  
 }
 
 .job-dates {
-    align-items: flex-end;
+    
+    font-style: italic;
+    color: #474237;
+
+}
+
+.list-experience span {
+    display: flex;
+    justify-content: space-between; /* Pushes Title to left, Date to right */
+    align-items: baseline; 
 }
 
 .job-desc {
-    align-items: flex-start;
+    margin: 0;
 }
 
 /* Transform the style of the "Connect" links */
