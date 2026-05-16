@@ -44,9 +44,8 @@ h1 {
     list-style: none;
     /* Remove the default indentation */
     padding: 0;
-    margin: 20px;
-    max-width: 600px;
-    border-left: 20px;
+    margin: 10px;
+    max-width: 600px;   
     margin-left: 30px;
 }
 
@@ -126,8 +125,11 @@ h1 {
     /* Primary color - GitHub's brand dark gray */
     color: #333; 
     font-size: 30px;
+    /* Make the nav links bold */
+    font-weight: bold;
+}
 
-  }
+
 /* Style for the nav items about-exp-skills-proj-connect */
   .list-nav-items {
      /* Remove bullets from listing */
@@ -151,10 +153,6 @@ h1 {
     /* Blue hover effect */
     color: #a0d9ef; 
   }
-  /* Make the nav links bold */
-  .nav-links a {
-    font-weight: bold;
-  }
 
   /* Job Experience */
   #Experience {
@@ -175,44 +173,3 @@ h1 {
     font-weight: bold;
     margin-top: 10px;
   }
-
-
-
-
-
-
-  /*
-.open-sans-About {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-      padding: 20px;
-      margin: 10px;
-  }
-
-.open-sans-Experience {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-    padding: 20px;
-    margin: 10px;
-}
-
-.open-sans-Connect {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings:
-      "width" 100;
-    text-align: center;
-    padding: 200px;
-    margin: 100px;
-}
-*/
