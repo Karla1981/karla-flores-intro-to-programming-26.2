@@ -55,8 +55,6 @@ h1 {
     display: block;/* display the skill list in block - each item takes up one full row */
     padding: 10px;
     background-color: #f0f0f0;
-
-    display: flex;
     /* Stacks header and description vertically */
     flex-direction: column; 
     /* Adds space between header and description */
@@ -68,15 +66,28 @@ h1 {
 /* Job title, dates, and desc */
 .job-title {
     margin: 0;
-    font-weight: bold;
+    font-size: 1.25rem;
   
 }
+  /* Job Experience */
+  #Experience {
+    display: flex;
+    flex-direction: column; /* Stacks the header row above the description */
+    margin-bottom: 30px;    /* Adds space between differe */
+    gap: 8px; /* Spacing between header and description */
+ 
+  }
+  .job-header {
+    display: flex;
+    justify-content: space-between; /* Pushes the date to the far right */
+    align-items: baseline; /* Aligns text bottoms perfectly */
+    flex-wrap: wrap; /* Allows wrapping on smaller mobile screens */
+    gap: 16px; /* Spacing between title and date on wrap */
+  }
 
 .job-dates {
-    
     font-style: italic;
     color: #474237;
-
 }
 
 .list-experience span {
@@ -87,6 +98,7 @@ h1 {
 
 .job-desc {
     margin: 0;
+  line-height: 1.5;
 }
 
 /* Transform the style of the "Connect" links */
@@ -133,8 +145,8 @@ h1 {
         border: 5px solid #474237;  
 }
 
-  /* Style for the nav items about-exp-skills-proj-connect */
-  .nav-links a{
+/* Style for the nav items about-exp-skills-proj-connect */
+.nav-links a{
     /* Takes the underline off from each item*/
     text-decoration: none;
     /* Remove bullets from listing */
@@ -145,7 +157,6 @@ h1 {
     /* Make the nav links bold */
     font-weight: bold;
 }
-
 
 /* Style for the nav items about-exp-skills-proj-connect */
   .list-nav-items {
@@ -170,20 +181,7 @@ h1 {
     /* Blue hover effect */
     color: #a0d9ef; 
   }
-
-  /* Job Experience */
-  #Experience {
-    display: flex;
-    flex-direction: column; /* Stacks the header row above the description */
-    margin-bottom: 30px;    /* Adds space between differe */
-  }
- 
-  /* Styles for individual elements */  
-  .list-experience li {
-    display: flex;
-    /* Pushes title left, date right */
-    justify-content: space-between; 
-    margin: 10px;
-    font-weight: bold;
-    margin-top: 10px;
+  .nav-links-sticky {
+    position: sticky;
+    top: 0;
   }
