@@ -1,0 +1,194 @@
+/*
+change the background color of the body
+*/
+body {
+    background-color: #edeae5;/* Platinum Color Background */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: rgb(69, 69, 69);
+
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #474237;/* Under World Color*/
+}
+
+h1 {
+      /* Typography */
+      font-family: 'Open Sans', sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      text-transform: uppercase; /* Makes it ALL CAPS */
+      letter-spacing: 3px;
+
+        /* Color & Style */
+        color: #333;
+        text-shadow: 2px 2px 4px #474237;
+    
+        /* Layout */
+        text-align: center;
+        padding: 20px;
+        margin-top: 10px;
+}
+/*  Transform the "Experience" list items into styled blocks */
+.list-experience {
+    /* Remove bullets from listing */
+    list-style: none;
+    /* Remove the default indentation */
+    padding: 0;
+    margin: 10px;
+    max-width: 600px;   
+    margin-left: 30px;
+}
+
+.list-experience li {
+    position: relative;
+    padding-left: 30px;
+    display: block;/* display the skill list in block - each item takes up one full row */
+    padding: 10px;
+    background-color: #f0f0f0;
+    /* Stacks header and description vertically */
+    flex-direction: column; 
+    /* Adds space between header and description */
+    gap: 10px;
+    display: flex;               
+    margin-bottom: 30px;
+
+}
+
+/* Job Experience */
+#Experience {
+    display: flex;
+    flex-direction: column; /* Stacks the header row above the description */
+    margin-bottom: 30px;    /* Adds space between differe */
+    gap: 8px; /* Spacing between header and description */
+ 
+}
+
+.job-header {
+    display: flex;
+    flex-direction: row;/* Ensures that job desc. appears below header row */
+    justify-content: space-between; /* Pushes the date to the far right */
+    align-items: baseline; /* Aligns text bottoms perfectly */
+    flex-wrap: wrap; /* Allows wrapping on smaller mobile screens */
+    gap: 16px; /* Spacing between title and date on wrap */
+}
+
+/* Job title, dates, and desc */
+.job-title {
+    flex-direction: row;
+    margin: 0;
+    font-size: 1.25rem;
+  
+}
+
+.job-dates {
+    flex-direction: row; 
+    font-style: italic;
+    color: #474237;
+}
+
+.list-experience span {
+    display: flex;
+    justify-content: space-between; /* Pushes Title to left, Date to right */
+    align-items: baseline; 
+}
+
+.job-desc {
+    margin: 0;
+  line-height: 1.5;
+}
+
+/* Transform the style of the "Connect" links */
+.list-connect {
+    display: flex;
+    justify-content: center; 
+    /* Adds equal spacing between each link */
+    gap: 5px;    
+    /* Aligns links vertically */          
+    align-items: center;     
+    padding: 10px 0;
+    /* Remove bullets from listing */
+    list-style: none;
+    margin: 10px;
+    max-width: 600px;
+    margin-left: 30px; 
+}
+#Connect {
+    display:inline-block;
+        
+}
+
+.list-connect a {
+    /* Remove default underlining */
+    text-decoration: none;
+    /* Primary color */
+    color: rgb(69, 69, 69);
+    
+}
+
+.list-connect a:hover {
+    color: #a0d9ef; /* Blue hover effect */
+  }
+
+/* Image put at the top right side of the page */
+.top-right-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100px; /* Adjust size as needed */
+        padding-top: 0;
+        margin: 20px;
+        border-radius:50%;
+        border: 5px solid #474237;  
+}
+
+/* Style for the nav items about-exp-skills-proj-connect */
+.nav-links a{
+    /* Takes the underline off from each item*/
+    text-decoration: none;
+    /* Remove bullets from listing */
+    list-style: none;
+    /* Primary color - GitHub's brand dark gray */
+    color: #333; 
+    font-size: 30px;
+    /* Make the nav links bold */
+    font-weight: bold;
+}
+
+/* Style for the nav items about-exp-skills-proj-connect */
+  .list-nav-items {
+     /* Remove bullets from listing */
+     list-style: none;
+  }
+  .nav-links-sticky {
+    position: sticky;
+    top: 0;
+  }
+
+  .nav-links ul {
+    list-style-type: none;
+    margin: 20px;/* margin on the nav bar */
+    padding: 40px;
+    display: flex;
+    background-color: #f0f0f0; /* Background color of nav */
+  }
+
+  /* Space out the items */
+  .nav-links li {
+    padding: 15px 20px;
+  }
+  /* Hoover onver navigation links */
+  .nav-links a:hover {
+    /* Blue hover effect */
+    color: #a0d9ef; 
+  }
+  
