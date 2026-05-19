@@ -172,7 +172,6 @@ h1 {
     position: sticky;
     top: 0;
 }
-
 .nav-links ul {
     list-style-type: none;
     margin: 20px;/* margin on the nav bar */
@@ -200,15 +199,15 @@ section #skills-title {
     justify-content: center;
 }
 
-#Skills { 
+#skills { 
     justify-content: center;
 }
 
-#Skills ul {
+#skills ul {
+
     background: #f0f0f0;
     padding: 10px 30px;
     border-radius: 8px;
-    flex: calc(33.33%);
     text-align: center;
     list-style: none;
 }

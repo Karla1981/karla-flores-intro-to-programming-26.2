@@ -13,11 +13,11 @@ document.body.appendChild(footer);
 
 // List your technical skills by creating an Array of String values 
 // and store it in a variable named skills. 
-const Skills = ["JavaScript", "HTML", "CSS", "GitHub"];
+const skills = ["JavaScript", "HTML", "CSS", "GitHub"];
 
 // Create a variable named skillsSection and 
 // use "DOM Selection" to select the skills section by id
-const skillsSection = document.getElementById('Skills'); 
+const skillsSection = document.getElementById('skills'); 
 
 // Create a variable named skillsList and
 // use "DOM Selection" to query the skillsSection
@@ -25,9 +25,9 @@ const skillsSection = document.getElementById('Skills');
 const skillsList = skillsSection.querySelector('ul');
 
 // create a for loop to iterate over your 'skils' array
-for (let i = 0; i < Skills.length; i++){
+for (let i = 0; i < skills.length; i++){
     // create new list array
     const skill = document.createElement('li');
-    skill.innerText = Skills[i];
+    skill.innerText = skills[i];
     skillsList.appendChild(skill);
 }
