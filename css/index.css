@@ -204,10 +204,15 @@ section #skills-title {
 }
 
 #skills ul {
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background: #f0f0f0;
     padding: 10px 30px;
     border-radius: 8px;
-    text-align: center;
     list-style: none;
+}
+#skills ul li{
+    margin: 30px;
+    font-size: 30px;
 }
