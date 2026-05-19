@@ -24,7 +24,7 @@ const skillsSection = document.getElementById('skills');
 
 const skillsList = skillsSection.querySelector('ul');
 
-// create a for loop to iterate over your 'skils' array
+// create a for loop to iterate over your 'skills' array
 for (let i = 0; i < skills.length; i++){
     // create new list array
     const skill = document.createElement('li');
