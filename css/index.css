@@ -61,7 +61,6 @@ h1 {
     gap: 10px;
     display: flex;               
     margin-bottom: 30px;
-
 }
 
 /* Job Experience */
@@ -70,7 +69,6 @@ h1 {
     flex-direction: column; /* Stacks the header row above the description */
     margin-bottom: 30px;    /* Adds space between differe */
     gap: 8px; /* Spacing between header and description */
- 
 }
 
 .job-header {
@@ -122,6 +120,7 @@ h1 {
     max-width: 600px;
     margin-left: 30px; 
 }
+
 #Connect {
     display:inline-block;
         
@@ -137,7 +136,7 @@ h1 {
 
 .list-connect a:hover {
     color: #a0d9ef; /* Blue hover effect */
-  }
+}
 
 /* Image put at the top right side of the page */
 .top-right-image {
@@ -165,30 +164,55 @@ h1 {
 }
 
 /* Style for the nav items about-exp-skills-proj-connect */
-  .list-nav-items {
+.list-nav-items {
      /* Remove bullets from listing */
      list-style: none;
-  }
-  .nav-links-sticky {
+}
+.nav-links-sticky {
     position: sticky;
     top: 0;
-  }
-
-  .nav-links ul {
+}
+.nav-links ul {
     list-style-type: none;
     margin: 20px;/* margin on the nav bar */
     padding: 40px;
     display: flex;
     background-color: #f0f0f0; /* Background color of nav */
-  }
+}
 
-  /* Space out the items */
-  .nav-links li {
+/* Space out the items */
+    .nav-links li {
     padding: 15px 20px;
-  }
-  /* Hoover onver navigation links */
-  .nav-links a:hover {
+}
+    /* Hoover onver navigation links */
+    .nav-links a:hover {
     /* Blue hover effect */
     color: #a0d9ef; 
-  }
-  
+}
+
+/* Style skill list */
+section #skills-title {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    padding: 20px;
+    justify-content: center;
+}
+
+#skills { 
+    justify-content: center;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #f0f0f0;
+    padding: 10px 30px;
+    border-radius: 8px;
+    list-style: none;
+}
+#skills ul li{
+    margin: 30px;
+    font-size: 30px;
+}
