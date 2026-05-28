@@ -10,12 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css"/>
-   
-    
 </head>
 <body>
     <header class="nav-links-sticky">  
-        <h1>Karla Flores</h1>
         <nav class="nav-links">
             <ul class="list-nav-items">
                 <li><a href="#About">About</a></li>
@@ -23,10 +20,13 @@
                 <li><a href="#Skills">Skills</a></li>
                 <li><a href="#Projects">Projects</a></li>
                 <li><a href="#Connect">Connect</a></li>
+                <li><a href="#MesageForm">Meassage Form</a></li>
             </ul>
         </nav>
+        <br>
+        
     </header>
-
+    <h1>Karla Flores</h1>
     <section id="Projects">
         <h2>Projects</h2>
         <ul></ul>
@@ -34,10 +34,11 @@
 
     <section id="About">
         <h2>About</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore id at doloremque ducimus dolore nemo sequi culpa 
-                tenetur animi magni soluta in, nisi dolores consequuntur 
-                tempora porro delectus, dolorem temporibus!
+            <p>I am a motivated entry level Software Developer who is looking for an opportunity
+                to grow in the technical aspect of this career as well as to improve my interpersonal
+                skills. Working on this project have provide me with experience in Java Script,
+                HTML, CSS and GitHub. I am a mature candidate who is willing to work at improving my skills
+                and excited to begin my career.  
             </p>
     </section>
 
@@ -56,9 +57,9 @@
                     <span class="job-dates">February 2018  - Present</span>
                     <span class="job-desc">Description</span>
                 </li>
-            </ul> 
-                
+            </ul>       
     </section>
+     <!--Karla's Photo Section-->
     <div class="image">
         <img src="images/LinkedIn.jpeg" alt="Photo of Karla Flores" class="top-right-image">
     </div>
@@ -75,6 +76,29 @@
             <li><a href="https://github.com" target="_blank">GitHub</a></li>
         </ul>
     </section>
+    <!--Message Form Section-->
+    <section id="MesageForm">
+        <h2>Leave a Message</h2>
+        <form name="leave_message">
+            <label>Name: </label>
+            <input type="text" name="usersName" required="true"><br>
+            <label>Email: </label>
+            <input type="email" name="usersEmail" required="true"><br>
+            <label>Message: </label>
+            <textarea name="usersMessage" required="true"></textarea><br>
+            
+            <!-- The button that "does not appear" must be explicitly added here -->
+            <button type="submit">Submit</button>
+        </form>
+        
+    </section>
+     <!--Message List Section   id="usersMessage"   id="usersEmail" id="userName"     -->
+    <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
+    </section>
+    <!--Javascript File Section-->
     <script src="js/index.js"></script>
+
 </body>
 </html>

@@ -8,12 +8,12 @@ body {
     color: rgb(69, 69, 69);
 
 }
-
+/* Section Style */
 section {
     margin: 20px 0;
     padding: 20px;
 }
-
+/* h2 Style */
 h2 {
     font-size: 38px;
     font-weight: 700;
@@ -21,6 +21,7 @@ h2 {
     color: #474237;/* Under World Color*/
 }
 
+/* h1 Style */
 h1 {
       /* Typography */
       font-family: 'Open Sans', sans-serif;
@@ -28,27 +29,48 @@ h1 {
       font-weight: 700;
       text-transform: uppercase; /* Makes it ALL CAPS */
       letter-spacing: 3px;
-
         /* Color & Style */
         color: #333;
         text-shadow: 2px 2px 4px #474237;
-    
         /* Layout */
         text-align: center;
         padding: 20px;
         margin-top: 10px;
 }
-/*  Transform the "Experience" list items into styled blocks */
-.list-experience {
-    /* Remove bullets from listing */
-    list-style: none;
-    /* Remove the default indentation */
-    padding: 0;
-    margin: 10px;
-    max-width: 600px;   
-    margin-left: 30px;
+
+/*About Section Style - the paragraph sectio  only shade the side of the container? */
+#About p{
+    padding: 20px 40px;
+    margin: 15px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: 2px solid #474237;
+    font-size: 20px;
+    letter-spacing: 1px;
 }
 
+/* Experience Section Style -change this to style the ul/li items only */
+#Experience {
+    text-decoration: none;
+    margin: 30 20px;
+    font-size: 20px;
+    justify-content: center;
+}
+
+/*  Transform the "Experience" list items into styled blocks */
+.list-experience {
+    background-color: #f0f0f0;
+    border: 2px solid #474237;
+    border-radius: 20px;
+    /* Remove bullets from listing */
+    list-style: none;
+    /* Puts list elements 350px to the left of their container */
+    margin: 30px;
+    padding: 50px;
+    letter-spacing: 3px;
+}
+
+/* List experience li Style */
 .list-experience li {
     position: relative;
     padding-left: 30px;
@@ -63,21 +85,14 @@ h1 {
     margin-bottom: 30px;
 }
 
-/* Job Experience */
-#Experience {
-    display: flex;
-    flex-direction: column; /* Stacks the header row above the description */
-    margin-bottom: 30px;    /* Adds space between differe */
-    gap: 8px; /* Spacing between header and description */
-}
-
+/* Job header Style */
 .job-header {
     display: flex;
     flex-direction: row;/* Ensures that job desc. appears below header row */
     justify-content: space-between; /* Pushes the date to the far right */
-    align-items: baseline; /* Aligns text bottoms perfectly */
+    align-items: center; /* Aligns text bottoms perfectly */
     flex-wrap: wrap; /* Allows wrapping on smaller mobile screens */
-    gap: 16px; /* Spacing between title and date on wrap */
+     
 }
 
 /* Job title, dates, and desc */
@@ -85,24 +100,28 @@ h1 {
     flex-direction: row;
     margin: 0;
     font-size: 1.25rem;
-  
+    align-items:first baseline;
 }
 
+/* Job direction Style */
 .job-dates {
     flex-direction: row; 
     font-style: italic;
     color: #474237;
+    align-items:first baseline;
 }
 
+/* Job experience span Style */
 .list-experience span {
     display: flex;
     justify-content: space-between; /* Pushes Title to left, Date to right */
-    align-items: baseline; 
+    align-items: first baseline; 
 }
 
 .job-desc {
     margin: 0;
-  line-height: 1.5;
+    line-height: 1.5;
+    align-items: first baseline;
 }
 
 /* Transform the style of the "Connect" links */
@@ -121,33 +140,40 @@ h1 {
     margin-left: 30px; 
 }
 
+/* Connect Style */
 #Connect {
     display:inline-block;
-        
+    letter-spacing: 2px;
+    font-size: 20px; 
 }
 
+/* List connect a Style */
 .list-connect a {
     /* Remove default underlining */
     text-decoration: none;
     /* Primary color */
-    color: rgb(69, 69, 69);
-    
+    color: #474237;
+    background-color: #f0f0f0;
+    border: 2px solid #474237;
+    border-radius: 10px;/*        */
+    margin: 20px;
+    padding: 20px;
 }
-
+/* List connect a hover Style */
 .list-connect a:hover {
     color: #a0d9ef; /* Blue hover effect */
 }
 
 /* Image put at the top right side of the page */
 .top-right-image {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100px; /* Adjust size as needed */
-        padding-top: 0;
-        margin: 20px;
-        border-radius:50%;
-        border: 5px solid #474237;  
+    position:fixed;
+    top:0%;
+    right:0%;
+    width: 100px; /* Adjust size as needed */
+    padding: 0px;
+    margin: 200px;
+    border-radius:50%;
+    border: 5px solid #474237;    
 }
 
 /* Style for the nav items about-exp-skills-proj-connect */
@@ -157,10 +183,11 @@ h1 {
     /* Remove bullets from listing */
     list-style: none;
     /* Primary color - GitHub's brand dark gray */
-    color: #333; 
+    color: #474237; 
     font-size: 30px;
     /* Make the nav links bold */
     font-weight: bold;
+    border-radius: 10px;
 }
 
 /* Style for the nav items about-exp-skills-proj-connect */
@@ -168,14 +195,19 @@ h1 {
      /* Remove bullets from listing */
      list-style: none;
 }
+
+/*  Style */
 .nav-links-sticky {
     position: sticky;
     top: 0;
 }
+
+/* Navigation links ul Style */
 .nav-links ul {
     list-style-type: none;
     margin: 20px;/* margin on the nav bar */
-    padding: 40px;
+    border-radius: 10px;
+    border:2px solid #474237;
     display: flex;
     background-color: #f0f0f0; /* Background color of nav */
 }
@@ -184,8 +216,9 @@ h1 {
     .nav-links li {
     padding: 15px 20px;
 }
-    /* Hoover onver navigation links */
-    .nav-links a:hover {
+
+/* Hoover onver navigation links */
+.nav-links a:hover {
     /* Blue hover effect */
     color: #a0d9ef; 
 }
@@ -199,20 +232,126 @@ section #skills-title {
     justify-content: center;
 }
 
+/* Skills Style */
 #skills { 
     justify-content: center;
 }
 
+/* Skills ul Style */
 #skills ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background: #f0f0f0;
     padding: 10px 30px;
-    border-radius: 8px;
+    border-radius: 10px;
+    border: 2px solid #474237;
     list-style: none;
 }
+
 #skills ul li{
     margin: 30px;
     font-size: 30px;
+}
+
+/*Leave a Message Styles */
+#MesageForm{ 
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+/* Form Input Style */
+input{
+    width: 400px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border: 2px solid #474237;
+}
+/* Form Textarea Style */
+textarea{
+    width: 400px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border: 2px solid #474237;
+
+}
+/* Leave a Message Form Input and Textarea Style */
+input, textarea{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Form Button Style */
+#MesageForm button{
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    border: 2px solid #474237;  
+
+}
+
+button:hover{
+    /* hover effect to button */
+    color: #a0d9ef;
+
+}
+/*  here */
+#messages {
+    background: #f0f0f0;
+    border: 2px solid #474237;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 100 40px;
+    padding: 30;
+    font-size: 14px;
+}
+
+/* Style messages list */
+input, textarea{
+text-decoration: none;
+    margin: 20 30px;
+    padding: 10px 5px;
+    font-size: 14px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;   
+}
+
+ul{
+    text-decoration: none;
+    margin: 20 30px;
+    border-radius: 8px;
+    justify-content: center; 
+}
+
+remove{/*keep working here */
+    margin-top: 20 30px;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    text-emphasis: none;
+}
+
+/* Footer Style */
+footer{
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+footer:hover{
+    color: #a0d9ef;
 }
