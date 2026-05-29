@@ -255,7 +255,7 @@ section #skills-title {
 }
 
 /*Leave a Message Styles */
-#MesageForm{ 
+#mesageForm{ 
     margin-top: 20px;
     padding: 10px 15px;
     font-size: 14px;
@@ -292,7 +292,7 @@ input, textarea{
 }
 
 /* Form Button Style */
-#MesageForm button{
+#mesageForm button{
     margin-top: 20px;
     padding: 10px 15px;
     font-size: 14px;
@@ -338,13 +338,22 @@ ul{
     justify-content: center; 
 }
 
-remove{/*keep working here */
-    margin-top: 20 30px;
-    padding: 10px 15px;
+/* Style the remove button inside the new message */
+button[type="button"]{
+    margin: 10px;
+    padding: 5px 10px;
     font-size: 14px;
     border-radius: 20px;
     letter-spacing: 2px;
     text-emphasis: none;
+}
+/* Styles the email enter by the user */
+a[href^="mailto:"] {
+    margin: 10px;
+    padding: 5px 10px;
+    text-decoration:none;
+    letter-spacing: 2px;
+    color: #474237;
 }
 
 /* Footer Style */
