@@ -155,7 +155,7 @@ h1 {
     color: #474237;
     background-color: #f0f0f0;
     border: 2px solid #474237;
-    border-radius: 10px;/*        */
+    border-radius: 20px;/*        */
     margin: 20px;
     padding: 20px;
 }
@@ -255,7 +255,7 @@ section #skills-title {
 }
 
 /*Leave a Message Styles */
-#mesageForm{ 
+#messageForm{ 
     margin-top: 20px;
     padding: 10px 15px;
     font-size: 14px;
@@ -264,20 +264,38 @@ section #skills-title {
 }
 
 /* Leave a Message Form Input and Textarea Style */
-input, textarea{
+input, textarea {
     display: inline-block;
     vertical-align: middle;
-    width: 400px;
     height: 50px;
     margin-bottom: 20px;
     padding: 10px 15px;
     letter-spacing: 2px;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 2px solid #474237;
+    text-decoration: none;
+    font-size: 14px;
 }
 
+/* Default style for larger screens */
+input, textarea {
+    width: 400px;
+    /* This ensure that iot does not overflow its container */
+    max-width: 100%;
+    /* THis keeps padding from affecting width */
+    box-sizing: border-box;
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 600px) {
+    input, textarea {
+      width: 100%;
+    }
+  }
+
+
 /* Form Button Style */
-#mesageForm button{
+#messageForm button{
     margin-top: 20px;
     padding: 10px 15px;
     font-size: 14px;
@@ -285,7 +303,7 @@ input, textarea{
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 2px;
     border: 2px solid #474237;  
-
+  
 }
 
 button:hover{
@@ -293,7 +311,7 @@ button:hover{
     color: #a0d9ef;
 
 }
-/*  here */
+/* Messages Style */
 #messages {
     background: #f0f0f0;
     border: 2px solid #474237;
@@ -303,17 +321,6 @@ button:hover{
     margin: 100 40px;
     padding: 30;
     font-size: 14px;
-}
-
-/* Style messages list */
-input, textarea{
-text-decoration: none;
-    margin: 20 30px;
-    padding: 10px 5px;
-    font-size: 14px;
-    border-radius: 20px;
-    letter-spacing: 2px;
-    text-decoration: none;   
 }
 
 ul{
