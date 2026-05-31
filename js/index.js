@@ -5,7 +5,7 @@ const thisYear = today.getFullYear();
 const footer = document.createElement('footer');
 const copyright = document.createElement('p');
 
-copyright.innerHTML =`Karla &copy; ${thisYear}`;
+copyright.innerHTML =`&copy; ${thisYear} Karla Flores`;
 
 footer.appendChild(copyright);
 document.body.appendChild(footer);
@@ -31,3 +31,57 @@ for (let i = 0; i < skills.length; i++){
     skill.innerText = skills[i];
     skillsList.appendChild(skill);
 }
+
+// Handle Message Form Submit
+//let messageForm = document.querySelector('form'); 
+const messageForm = document.querySelector('form[name="leave_message"]');
+
+
+// 2. Add the submit event listener
+messageForm.addEventListener('submit', (event) => {
+    // Prevent the default form submission (stops page refresh)
+    event.preventDefault();
+
+    // 3. Create three variables to retrieve values from the form fields
+    const usersName = event.target.usersName.value;
+    const usersEmail = event.target.usersEmail.value;
+    const usersMessage = event.target.usersMessage.value;
+
+    // Log the variables to the console
+    console.log(`${usersName} ${usersEmail} ${usersMessage}`)
+
+    // Create a variable named messageSection and use "DOM Selection" to select the #messages section by id
+    const messageSection = document.getElementById('messages');
+    const messageList = messageSection.querySelector('ul');
+    // Create a variable named newMessage that makes a new list item (li) element
+    const newMessage = document.createElement('li');
+
+    //start here down -set the inner HTML of your newMessage - <a> element that displays the "usersName" and is a clickable link to the "usersEmail" (hint: use the mailto: prefix)
+    // <span> element that displays the "usersMessage"
+    newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a><span>${usersMessage}</span>`;
+
+    // create a variable called removeButton that makes a new <button> element
+    const removeButton = document.createElement('button');
+
+    // set the inner text to 'remove'
+    removeButton.textContent = 'remove';
+
+    // set the type attribute to 'button'
+    removeButton.type = 'button';
+
+    // add an event listener to the removeButton element that handles the 'click' event
+    removeButton.addEventListener('click', function(){
+
+        // create a variable named 'entry' that finds the buttons parent
+        // element uding DOM
+        const entry = this.parentNode;
+        entry.remove();
+    });
+    // 
+    newMessage.appendChild(removeButton);
+    messageList.appendChild(newMessage);
+
+    // reset the form
+    messageForm.reset();
+
+});
