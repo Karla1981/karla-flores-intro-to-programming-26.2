@@ -77,7 +77,6 @@ messageForm.addEventListener('submit', (event) => {
         const entry = this.parentNode;
         entry.remove();
     });
-    // 
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
 
@@ -85,3 +84,38 @@ messageForm.addEventListener('submit', (event) => {
     messageForm.reset();
 
 });
+// Use the Fetch API to create a 'GET' request
+//const username = 'Karla1981';
+
+    // Send request to github
+    fetch('https://api.github.com/users/Karla1981/repos')
+    .then((response) =>{
+    
+        // check if response is OK
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`)
+        }
+        // return the raw text
+            return response.text();
+        }).then((responseText) => {
+            
+            // Parse the response 
+            const repositories = JSON.parse(responseText);
+
+            // display the values
+            console.log(repositories)
+             //  Create a variable named projectList; using "DOM Selection" query the projectSection 
+             const projectList = document.querySelector('#Projects')
+
+             for (let i=0; i < repositories.length; i++) {
+                 const project = document.createElement('li');
+     
+                 //
+                 project.innerText = repositories[i].name;
+                 projectList.appendChild(project);
+             }
+             
+        })
+        .catch((error) => {
+            console.log('Falied to fetch the Git repos', error);
+        })
