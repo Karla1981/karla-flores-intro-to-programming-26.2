@@ -102,19 +102,20 @@ messageForm.addEventListener('submit', (event) => {
             // Parse the response 
             const repositories = JSON.parse(responseText);
 
-            // display the values
-            console.log(repositories)
-             //  Create a variable named projectList; using "DOM Selection" query the projectSection 
-             const projectList = document.querySelector('#Projects')
+            //select section
+            const projectSection = document.getElementById('Projects');
 
-             for (let i=0; i < repositories.length; i++) {
-                 const project = document.createElement('li');
-     
-                 //
-                 project.innerText = repositories[i].name;
-                 projectList.appendChild(project);
-             }
-             
+            // Select ul inside the section
+            const projectList = projectSection.querySelector('ul');
+
+            // loop throu projects
+            for (let i=0; i < repositories.length; i++){
+                const projectItem = document.createElement('li');
+                projectItem.innerText = repositories[i].name;
+                 // append items to the project list
+                projectList.appendChild(projectItem);
+            }
+
         })
         .catch((error) => {
             console.log('Falied to fetch the Git repos', error);

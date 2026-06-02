@@ -376,6 +376,6 @@ footer:hover{
 }
 
 /* Style ul - take bullet points off */
-#Projects.ul{
+#Projects ul{
     list-style-type: none;
 }
