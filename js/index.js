@@ -92,7 +92,39 @@ messageForm.addEventListener('submit', (event) => {
     // Send request to github
     fetch('https://api.github.com/users/Karla1981/repos')
     .then( response => {
-    /*
+       if (!response.ok) {
+        throw new Error(`HTTP error ${response.status}`);
+       }
+       return response.json();
+    })
+    .then((repositories) => {
+
+        console.log(repositories);
+
+        const projectList = projectSection.querySelector('ul');
+
+        repositories.forEach(repo => {
+            const listItem = document.createElement('li');
+            listItem.textContent = repo.name;
+            projectList.appendChild(listItem);
+        
+        })
+    })
+    .catch((error) => {
+        console.log('Failed to fetch the Git repos', error);
+
+        // create an error message on the page
+        const errorMessage = document.createElement('p');
+        errorMessage.textContent = 'Oops! we encountered an issue loading the repositories. Please try again later.';
+
+        // append error message to the project section
+        projectSection.appendChild(errorMessage);
+    });
+
+
+
+
+     /*
         // check if response is OK
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`)
@@ -122,20 +154,3 @@ messageForm.addEventListener('submit', (event) => {
         })
 
         */
-       if (!response.ok) {
-        throw new Error(`HTTP error ${response.status}`);
-       }
-       return response.json();
-    }).then(repositories =>{
-        repositories.forEach(repo => console.log(repo.name));
-    })
-    .catch((error) => {
-        console.log('Failed to fetch the Git repos', error);
-
-        // create an error message on the page
-        const errorMessage = document.createElement('p');
-        errorMessage.textContent = 'Oops! we encountered an issue loading the repositories. Please try again later.';
-
-        // append error message to the project section
-        projectSection.appendChild(errorMessage);
-    });
