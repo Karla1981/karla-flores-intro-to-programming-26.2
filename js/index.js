@@ -100,7 +100,10 @@ messageForm.addEventListener('submit', (event) => {
         }).then((responseText) => {
             
             // Parse the response 
+            
             const repositories = JSON.parse(responseText);
+            // console log the repositories
+            console.log(repositories);
 
             //select section
             const projectSection = document.getElementById('Projects');
