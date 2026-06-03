@@ -115,10 +115,10 @@ messageForm.addEventListener('submit', (event) => {
 
             // loop throu projects
             for (let i=0; i < repositories.length; i++){
-                const projectItem = document.createElement('li');
-                projectItem.innerText = repositories[i].name;
+                const project = document.createElement('li');
+                project.innerText = repositories[i].name;
                  // append items to the project list
-                projectList.appendChild(projectItem);
+                projectList.appendChild(project);
             }
 
         })
