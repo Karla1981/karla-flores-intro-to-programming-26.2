@@ -97,10 +97,11 @@ messageForm.addEventListener('submit', (event) => {
         }
         // return the raw text
             return response.text();
+
         }).then((responseText) => {
             
             // Parse the response 
-            
+
             const repositories = JSON.parse(responseText);
             // console log the repositories
             console.log(repositories);
@@ -121,5 +122,13 @@ messageForm.addEventListener('submit', (event) => {
 
         })
         .catch((error) => {
-            console.log('Falied to fetch the Git repos', error);
-        })
+            console.log('Failed to fetch the Git repos', error);
+
+            // create an error message on the page
+            const errorMessage = document.createElement('p');
+            errorMessage.textContent = 'Oops! we encounter an issue loading the repositories. Please try again later.';
+
+            // append error message to the project section
+            projectSection.appendChild(errorMessage);
+
+        });
