@@ -86,6 +86,8 @@ messageForm.addEventListener('submit', (event) => {
 });
 // Use the Fetch API to create a 'GET' request
 //const username = 'Karla1981';
+ //select section
+ const projectSection = document.getElementById('Projects');
 
     // Send request to github
     fetch('https://api.github.com/users/Karla1981/repos')
@@ -106,8 +108,7 @@ messageForm.addEventListener('submit', (event) => {
             // console log the repositories
             console.log(repositories);
 
-            //select section
-            const projectSection = document.getElementById('Projects');
+           //////
 
             // Select ul inside the section
             const projectList = projectSection.querySelector('ul');
