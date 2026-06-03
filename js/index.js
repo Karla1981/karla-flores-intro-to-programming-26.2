@@ -91,21 +91,20 @@ messageForm.addEventListener('submit', (event) => {
 
     // Send request to github
     fetch('https://api.github.com/users/Karla1981/repos')
-    .then((response) => {
-         // return the raw text
-         return response.json();//response.json()
+    .then( response => {
+    /*
+        // check if response is OK
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`)
+        }
+        // return the raw text
+            return response.text();//response.json()
 
-            // check if response is OK
-            if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`)}
-
-        }).then((response) => {//responseText
+        }).then((responseText) => {
             
             // Parse the response 
-            console.log(response);
 
-        }).then((response) => {//responseText
-            const repositories = JSON.parse(response);//responseText
+            const repositories = JSON.parse(responseText);
             // console log the repositories
             console.log(repositories);
 
@@ -121,13 +120,22 @@ messageForm.addEventListener('submit', (event) => {
             }
 
         })
-        .catch((error) => {
-            console.log('Failed to fetch the Git repos', error);
 
-            // create an error message on the page
-            const errorMessage = document.createElement('p');
-            errorMessage.textContent = 'Oops! we encountered an issue loading the repositories. Please try again later.';
+        */
+       if (!response.ok) {
+        throw new Error(`HTTP error ${response.status}`);
+       }
+       return response.json();
+    }).then(repositories =>{
+        repositories.forEach(repo => console.log(repo.name));
+    })
+    .catch((error) => {
+        console.log('Failed to fetch the Git repos', error);
 
-            // append error message to the project section
-            projectSection.appendChild(errorMessage);
-        });
+        // create an error message on the page
+        const errorMessage = document.createElement('p');
+        errorMessage.textContent = 'Oops! we encountered an issue loading the repositories. Please try again later.';
+
+        // append error message to the project section
+        projectSection.appendChild(errorMessage);
+    });
