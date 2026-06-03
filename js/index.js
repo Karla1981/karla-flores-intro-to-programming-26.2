@@ -91,20 +91,21 @@ messageForm.addEventListener('submit', (event) => {
 
     // Send request to github
     fetch('https://api.github.com/users/Karla1981/repos')
-    .then((response) =>{
+    .then((response) => {
     
         // check if response is OK
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`)
         }
         // return the raw text
-            return response.text();//response.json()
+            return response.json();//response.json()
 
-        }).then((responseText) => {
+        }).then((response) => {//responseText
             
             // Parse the response 
 
-            const repositories = JSON.parse(responseText);
+        }).then((response) => {//responseText
+            const repositories = JSON.parse(response);//responseText
             // console log the repositories
             console.log(repositories);
 
@@ -129,5 +130,4 @@ messageForm.addEventListener('submit', (event) => {
 
             // append error message to the project section
             projectSection.appendChild(errorMessage);
-
         });
