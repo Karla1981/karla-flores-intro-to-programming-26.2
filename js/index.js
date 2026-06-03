@@ -92,17 +92,17 @@ messageForm.addEventListener('submit', (event) => {
     // Send request to github
     fetch('https://api.github.com/users/Karla1981/repos')
     .then((response) => {
-    
-        // check if response is OK
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`)
-        }
-        // return the raw text
-            return response.json();//response.json()
+         // return the raw text
+         return response.json();//response.json()
+
+            // check if response is OK
+            if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`)}
 
         }).then((response) => {//responseText
             
             // Parse the response 
+            console.log(response);
 
         }).then((response) => {//responseText
             const repositories = JSON.parse(response);//responseText
