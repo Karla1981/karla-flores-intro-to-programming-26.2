@@ -364,12 +364,7 @@ footer:hover{
 }
 
 /* Projects Style */
-#Projects {
-    padding: 20px 40px;
-    margin: 15px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    border: 2px solid #474237;
+#Projects {    
     font-size: 20px;
     letter-spacing: 2px;
     list-style-type: none;
@@ -377,5 +372,10 @@ footer:hover{
 
 /* Style ul - take bullet points off */
 #Projects ul{
+    border-radius: 10px;
     list-style-type: none;
+    background-color: #f0f0f0;
+    border: 2px solid #474237;
+    padding: 20px 40px;
+    margin: 15px;
 }

@@ -98,7 +98,7 @@ messageForm.addEventListener('submit', (event) => {
             throw new Error(`HTTP error! Status: ${response.status}`)
         }
         // return the raw text
-            return response.text();
+            return response.text();//response.json()
 
         }).then((responseText) => {
             
@@ -107,8 +107,6 @@ messageForm.addEventListener('submit', (event) => {
             const repositories = JSON.parse(responseText);
             // console log the repositories
             console.log(repositories);
-
-           //////
 
             // Select ul inside the section
             const projectList = projectSection.querySelector('ul');
@@ -127,7 +125,7 @@ messageForm.addEventListener('submit', (event) => {
 
             // create an error message on the page
             const errorMessage = document.createElement('p');
-            errorMessage.textContent = 'Oops! we encounter an issue loading the repositories. Please try again later.';
+            errorMessage.textContent = 'Oops! we encountered an issue loading the repositories. Please try again later.';
 
             // append error message to the project section
             projectSection.appendChild(errorMessage);
