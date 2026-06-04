@@ -103,13 +103,13 @@ messageForm.addEventListener('submit', (event) => {
 
         const projectList = projectSection.querySelector('ul');
 
-        repositories.forEach(repo => {
-            const listItem = document.createElement('li');
-            listItem.textContent = repo.name;
-            projectList.appendChild(listItem);
-        
-        })
-    })
+       // loop throu projects
+       for (let i=0; i < repositories.length; i++){
+        const project = document.createElement('li');
+        project.innerText = repositories[i].name;
+         // append items to the project list
+        projectList.appendChild(project);
+    }})
     .catch((error) => {
         console.log('Failed to fetch the Git repos', error);
 
