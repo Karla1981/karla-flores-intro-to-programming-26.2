@@ -8,11 +8,13 @@ body {
     color: rgb(69, 69, 69);
 
 }
+
 /* Section Style */
 section {
     margin: 20px 0;
     padding: 20px;
 }
+
 /* h2 Style */
 h2 {
     font-size: 38px;
@@ -159,6 +161,7 @@ h1 {
     margin: 20px;
     padding: 20px;
 }
+
 /* List connect a hover Style */
 .list-connect a:hover {
     color: #a0d9ef; /* Blue hover effect */
@@ -166,12 +169,9 @@ h1 {
 
 /* Image put at the top right side of the page */
 .top-right-image {
-    position:fixed;
-    top:0%;
-    right:0%;
     width: 100px; /* Adjust size as needed */
     padding: 0px;
-    margin: 200px;
+    margin: 20px;
     border-radius:50%;
     border: 5px solid #474237;    
 }
@@ -289,10 +289,9 @@ input, textarea {
 /* Responsive adjustment for mobile */
 @media (max-width: 600px) {
     input, textarea {
-      width: 100%;
-    }
-  }
-
+    width: 100%;
+ }
+}
 
 /* Form Button Style */
 #messageForm button{
@@ -311,6 +310,7 @@ button:hover{
     color: #a0d9ef;
 
 }
+
 /* Messages Style */
 #messages {
     background: #f0f0f0;
@@ -321,6 +321,11 @@ button:hover{
     margin: 100 40px;
     padding: 30;
     font-size: 14px;
+}
+
+/* Messages Section - Take off the bullet points from dinamically created list */
+#messages ul{
+    list-style-type: none;
 }
 
 ul{
@@ -339,6 +344,7 @@ button[type="button"]{
     letter-spacing: 2px;
     text-emphasis: none;
 }
+
 /* Styles the email enter by the user */
 a[href^="mailto:"] {
     margin: 10px;
@@ -355,4 +361,21 @@ footer{
 }
 footer:hover{
     color: #a0d9ef;
+}
+
+/* Projects Style */
+#Projects {    
+    font-size: 20px;
+    letter-spacing: 2px;
+    list-style-type: none;
+}
+
+/* Style ul - take bullet points off */
+#Projects ul{
+    border-radius: 10px;
+    list-style-type: none;
+    background-color: #f0f0f0;
+    border: 2px solid #474237;
+    padding: 20px 40px;
+    margin: 15px;
 }
