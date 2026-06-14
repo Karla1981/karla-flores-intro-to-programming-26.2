@@ -92,6 +92,7 @@ messageForm.addEventListener('submit', (event) => {
     // Send request to github
     fetch('https://api.github.com/users/Karla1981/repos')
     .then( response => {
+        // check if the http request is ok - 200 = ok
        if (!response.ok) {
         throw new Error(`HTTP error: ${response.status}`);
        }

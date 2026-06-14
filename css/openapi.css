@@ -50,5 +50,5 @@ button a:hover{
     padding: 30px;
     margin: 20 40px;
     background-color: #a0d9ef; /* Blue */
-    ;
+    display: flex;
 }

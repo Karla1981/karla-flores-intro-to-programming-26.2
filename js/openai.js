@@ -34,7 +34,8 @@ async function getWeatherData(){
 
     } catch(error) {
         // catch any network errors
-        console.log('Failed to fetch weathr: ', error);
+        console.log('Failed to fetch weather data: ', error.message);
+        return {error: true, message: 'Weather data is currently unavailable.'};
     }
 }
 // call function
