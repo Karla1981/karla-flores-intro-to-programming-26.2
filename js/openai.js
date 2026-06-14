@@ -1,6 +1,5 @@
-const country = 'Chicago';
 const city_weather = document.getElementById('city');
-city_weather.innerHTML = `<p>Current weather in ${country}</p>`;
+city_weather.textContent = 'Current weather in Chicago';
 
 const latitude = 41.85;
 const longitude = -87.65;
@@ -33,7 +32,7 @@ async function getWeatherData(){
        document.getElementById('temp').innerText = temperature + ' C';
        document.getElementById('humidity').innerText = currentHumidity + '%';
 
-    } catch {
+    } catch(error) {
         // catch any network errors
         console.log('Failed to fetch weathr: ', error);
     }
