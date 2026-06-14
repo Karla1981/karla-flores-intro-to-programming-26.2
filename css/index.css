@@ -200,9 +200,12 @@ h1 {
 .nav-links-sticky {
     position: sticky; 
     display: flex;
+    top: 0;
+    left: 0;
+    z-index: 9999;
     justify-content: center; /* Pushes the date to the far right */
     align-items: center; /* Aligns text bottoms perfectly */
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 20px; 
 }
