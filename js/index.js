@@ -93,7 +93,7 @@ messageForm.addEventListener('submit', (event) => {
     fetch('https://api.github.com/users/Karla1981/repos')
     .then( response => {
        if (!response.ok) {
-        throw new Error(`HTTP error ${response.status}`);
+        throw new Error(`HTTP error: ${response.status}`);
        }
        return response.json();
     })
@@ -120,37 +120,3 @@ messageForm.addEventListener('submit', (event) => {
         // append error message to the project section
         projectSection.appendChild(errorMessage);
     });
-
-
-
-
-     /*
-        // check if response is OK
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`)
-        }
-        // return the raw text
-            return response.text();//response.json()
-
-        }).then((responseText) => {
-            
-            // Parse the response 
-
-            const repositories = JSON.parse(responseText);
-            // console log the repositories
-            console.log(repositories);
-
-            // Select ul inside the section
-            const projectList = projectSection.querySelector('ul');
-
-            // loop throu projects
-            for (let i=0; i < repositories.length; i++){
-                const project = document.createElement('li');
-                project.innerText = repositories[i].name;
-                 // append items to the project list
-                projectList.appendChild(project);
-            }
-
-        })
-
-        */
