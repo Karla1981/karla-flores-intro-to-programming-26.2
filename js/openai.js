@@ -3,7 +3,7 @@ city_weather.textContent = 'Current weather in Chicago';
 
 const latitude = 41.85;
 const longitude = -87.65;
-const api_url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m&current=temperature_2m&current=relative_humidity_2m&`;
+const api_url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m&current=temperature_2m&current=relative_humidity_2m`;
 
 
  // create fuction to get weather data
