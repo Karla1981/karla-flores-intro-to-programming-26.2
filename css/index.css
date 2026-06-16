@@ -192,22 +192,19 @@ h1 {
 
 /* Style for the nav items about-exp-skills-proj-connect */
 .list-nav-items {
-     /* Remove bullets from listing */
-     list-style: none;
+    /* Remove bullets from listing */
+    list-style: none;
+    display: flex; /* activates flexbos */
+    flex-wrap: wrap;/* keeps items inside the container when space is running out */
+    justify-content: center; /* Puts content to center */
+    align-items: center; /* Aligns text to the center */
 }
 
 /*  Style navigation items - this is the main container */
 .nav-links-sticky {
     position: sticky; 
-    display: flex;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    justify-content: center; /* Pushes the date to the far right */
-    align-items: center; /* Aligns text bottoms perfectly */
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 20px; 
+    top: 0;/* stays at the top of the viewprot when page is scrolled */
+    z-index: 100;/* keeps it on top of the content */
 }
 
 /* Navigation links ul Style */
