@@ -13,8 +13,19 @@
         <p>With a current humidity of... <span id="humidity"> </span></p>
     </section>
     <section id="back-btn">
-        <button type="button"><a href="index.html">Bring me back to index html</a></button>
+        <button type="button"><a href="index.html">Bring me back to home page</a></button>
     </section>
+
+    <hr>
+    <section id="weatherContainer">
+        <h1>Current Weather by City</h1>
+        <form name="current weather">
+            <input type="text" id="cityInput" placeholder="Enter a city name"/>
+            <button onclick="getWeather()">Get Weather</button>
+        </form>
+    </section>
+    
+
     <!--Javascript File Section-->
     <script src="js/openai.js"></script>
 </body>

@@ -84,8 +84,7 @@ messageForm.addEventListener('submit', (event) => {
     messageForm.reset();
 
 });
-// Use the Fetch API to create a 'GET' request
-//const username = 'Karla1981';
+
  //select section
  const projectSection = document.getElementById('Projects');
 

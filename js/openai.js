@@ -40,3 +40,4 @@ async function getWeatherData(){
 }
 // call function
 getWeatherData();
+
