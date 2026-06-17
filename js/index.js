@@ -84,16 +84,16 @@ messageForm.addEventListener('submit', (event) => {
     messageForm.reset();
 
 });
-// Use the Fetch API to create a 'GET' request
-//const username = 'Karla1981';
+
  //select section
  const projectSection = document.getElementById('Projects');
 
     // Send request to github
     fetch('https://api.github.com/users/Karla1981/repos')
     .then( response => {
+        // check if the http request is ok - 200 = ok
        if (!response.ok) {
-        throw new Error(`HTTP error ${response.status}`);
+        throw new Error(`HTTP error: ${response.status}`);
        }
        return response.json();
     })
@@ -120,37 +120,3 @@ messageForm.addEventListener('submit', (event) => {
         // append error message to the project section
         projectSection.appendChild(errorMessage);
     });
-
-
-
-
-     /*
-        // check if response is OK
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`)
-        }
-        // return the raw text
-            return response.text();//response.json()
-
-        }).then((responseText) => {
-            
-            // Parse the response 
-
-            const repositories = JSON.parse(responseText);
-            // console log the repositories
-            console.log(repositories);
-
-            // Select ul inside the section
-            const projectList = projectSection.querySelector('ul');
-
-            // loop throu projects
-            for (let i=0; i < repositories.length; i++){
-                const project = document.createElement('li');
-                project.innerText = repositories[i].name;
-                 // append items to the project list
-                projectList.appendChild(project);
-            }
-
-        })
-
-        */

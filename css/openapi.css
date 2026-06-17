@@ -1,0 +1,73 @@
+/*Style the page body */
+body{
+    background-color: #edeae5;/* Platinum Color Background */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: #474237;  
+}
+
+/* Aligned the btn to the center of the page */
+#back-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;/* the btn takes 100% of visible screen height */
+}
+
+/* General style for bring me back btn */
+ button {
+    display: flex;
+    justify-content: center; /* display btn center */
+    align-items: center;
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    border: 2px solid #474237;  
+    background-color: #f0f0f0;
+    
+}
+
+/* Style that takes off the underline to the link and adds color */
+button a{
+    text-decoration: none;
+    color: #474237;
+   
+}
+
+/* Change btn color when hover over it */
+button a:hover{
+    /* hover effect to button */
+    color: #a0d9ef;
+
+}
+
+/* centigrados */
+#weather-openai p{
+    flex-direction: column;
+    padding: 10px;
+    margin: 10 20px;
+    background-color: #a0d9ef; /* Blue */
+    display: flex;
+}
+
+input{
+    justify-content: center;
+    align-items: center;
+}
+
+ button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    border: 2px solid #474237;  
+    background-color: #f0f0f0;
+ }
